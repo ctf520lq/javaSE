@@ -12,8 +12,8 @@ public class ArrayListDemo {
 
 	public static void main(String[] args) {
 		//List<String> list =  new ArrayList<>();
-		//List<String> list = Collections.synchronizedList(new ArrayList<>());
-		//List<String> list = new CopyOnWriteArrayList<>();
+		//List<String> list = Collections.synchronizedList(new ArrayList<>()); //集合工具类的同步方法
+		//List<String> list = new CopyOnWriteArrayList<>(); //juc并发包下的方法
 		Set<String> set = Collections.synchronizedSet(new HashSet<>());
 		for (int i = 0; i < 30; i++) {
 			new Thread(new Runnable() {
